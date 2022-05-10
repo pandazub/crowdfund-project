@@ -1,0 +1,287 @@
+:root{
+ --Moderate-cyan: hsl(176, 50%, 47%);
+ --dark-cyan: hsl(176, 72%, 28%);
+ --black: hsl(0, 0%, 0%);
+ --Dark-gray: hsl(0, 0%, 48%);
+ --light-grey: #d3d3d3;
+ --white-color:#fff;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Commissioner';
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    background-color: var(--light-grey);
+}
+
+a{
+    color: var(--white-color);
+    text-decoration: none;
+
+}
+
+
+#background{
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/images/image-hero-desktop.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 7rem;
+}
+
+.navlinks ul li{
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.navlinks ul{
+    display: flex;
+}
+
+.navlinks i{
+    color:var(--white-color);
+    display: none;
+}
+
+#topsection{
+    background-color: var(--white-color);
+    padding: 3rem;
+    margin: -5rem auto 0;
+    width: 48%;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+#topsection .toptext p{
+    margin: 1rem 0 3rem;
+    color: var(--Dark-gray);
+}
+
+.twoButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.twoButtons a{
+    background-color: var(--Moderate-cyan);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.twoButtons .bookmark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-color);
+    padding: 0 16px 0 0;
+    border-radius: 50px;
+    background-color: var(--light-grey);
+}
+
+.twoButtons .bookmark i{
+    color: var(--white-color);
+    background-color: var(--black);
+    padding: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+#middlesection{
+    text-align: center;
+    margin: 1rem auto;
+    padding: 3rem;
+    border-radius: 5px;
+    width: 48%;
+    background-color: var(--white-color);
+}
+
+#middlesection .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* margin: 20px 100px; */
+}
+
+.innerBglines {
+    background-color: var(--Moderate-cyan);
+    padding: 6px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.bgLines {
+    background-color: var(--light-grey);
+    padding-right: 80px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#aboutSection{
+    /* text-align: center; */
+    margin: 1rem auto;
+    padding: 3rem;
+    border-radius: 5px;
+    width: 48%;
+    background-color: var(--white-color);
+}
+
+.selectReward{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectReward .reward{
+    padding: 16px;
+    background-color: var(--Moderate-cyan);
+    border-radius: 25px;
+    margin-top: 20px;
+    color: white;
+}
+
+.bamboStand1{
+    border: 1px solid gray;
+    padding: 16px ;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+/* .backeditionStand .Bamboo{
+    margin: 1rem auto;
+    padding: 3rem;
+    border-radius: 5px;
+    width: 48%;
+    background-color: var(--white-color);
+} */
+
+.backeditionStand{
+    border: 1px solid gray;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 16px;
+
+}
+
+.Mahogany{
+    border: 1px solid gray;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 16px;
+
+
+}
+
+
+@media screen and (max-width:992px) {
+
+    .twoButtons .bookmark{
+        padding: 0;
+    }
+
+    .twoButtons .bookmark p{
+        display: none;
+        margin-bottom: 1.5rem;
+    }
+
+    .twoButtons .bookmark i{
+        margin-right: 0;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .navlinks i{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .navbar .navitems{
+        position: absolute;
+        display: block;
+        background-color: var(--dark-cyan);
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 40%;
+        transition: .5s;
+        /* text-align: center; */
+    }
+
+    #topsection{
+        width: 90%;
+    }
+
+    #topsection .toptext{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 1rem;
+    }
+
+    .navbar .navitems li{
+        padding: 1rem;
+    }
+
+    .navbar .navitems i{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #aboutSection{
+        width: 90%;
+    }
+
+    #aboutSection .about{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #middlesection{
+        width: 90%;
+        
+    }
+
+    #middlesection .container {
+        display: block;
+    }
+
+    #goat{
+        margin:1rem 0 ;
+
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    
+}
